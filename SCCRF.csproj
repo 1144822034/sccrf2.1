@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F90D2B04-6797-4CDB-967C-4AF374BC3811}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CommandBlock</RootNamespace>
+    <AssemblyName>SCCRF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCCRF\CellInfo.cs" />
+    <Compile Include="SCCRF\CellInfoShow.cs" />
+    <Compile Include="SCCRF\CodeTable.cs" />
+    <Compile Include="SCCRF\JEIinit.cs" />
+    <Compile Include="SCCRF\MessageInfo.cs" />
+    <Compile Include="SCCRF\MoreInfo.cs" />
+    <Compile Include="SCCRF\XjBitmapClickWidget.cs" />
+    <Compile Include="SCCRF\XjBitmapWidget.cs" />
+    <Compile Include="SCCRF\XJCompare.cs" />
+    <Compile Include="SCCRF\XjJeiBehavior.cs" />
+    <Compile Include="SCCRF\XjJeiBlock.cs" />
+    <Compile Include="SCCRF\XjJeiLibrary.cs" />
+    <Compile Include="SCCRF\XjJeiManager.cs" />
+    <Compile Include="SCCRF\XjJeiWidget.cs" />
+    <Compile Include="SCCRF\XjTimer.cs" />
+    <Compile Include="SCCRF\ZhcNToPinyin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Engine, Version=1.0.6413.33184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\api电脑版1_2_2\Survivalcraft\Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySystem, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\api电脑版1_2_2\Survivalcraft\EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="Survivalcraft, Version=2.1.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\api电脑版1_2_2\Survivalcraft\Survivalcraft.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
