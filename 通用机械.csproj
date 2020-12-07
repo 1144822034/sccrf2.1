@@ -49,7 +49,6 @@
     <Compile Include="Animate\FengliAnimate.cs" />
     <Compile Include="Block\ItemAlphaBlock.cs" />
     <Compile Include="Block\ItemPlantBlock.cs" />
-    <Compile Include="Block\MekClothBlock.cs" />
     <Compile Include="Block\MekFluidBlock.cs" />
     <Compile Include="Component\ComponentAlloy.cs" />
     <Compile Include="Component\ComponentBaseEnergy.cs" />
@@ -92,7 +91,6 @@
     <Compile Include="Item\MekSmelt.cs" />
     <Compile Include="Item\MekBaseSolarPanel.cs" />
     <Compile Include="Item\MekTransmitBOx.cs" />
-    <Compile Include="MekClothData.cs" />
     <Compile Include="MekCraftingRecipe.cs" />
     <Compile Include="ElectricElement\SolarGeneratorElement.cs" />
     <Compile Include="Item\ItemEnergyBase.cs" />
