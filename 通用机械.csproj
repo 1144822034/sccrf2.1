@@ -59,7 +59,6 @@
     <Compile Include="Component\ComponentEnrich.cs" />
     <Compile Include="Component\ComponentFluidStore.cs" />
     <Compile Include="Component\ComponentManufactory.cs" />
-    <Compile Include="Component\ComponentMekCloth.cs" />
     <Compile Include="Component\ComponentMekDynamic.cs" />
     <Compile Include="Component\ComponentNGui.cs" />
     <Compile Include="Component\ComponentPlayUpdate.cs" />

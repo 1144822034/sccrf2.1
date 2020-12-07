@@ -43,7 +43,7 @@ namespace Mekiasm
         }
         public virtual bool Simulate()
         {
-            return false;
+            return true;
         }
     }
 }

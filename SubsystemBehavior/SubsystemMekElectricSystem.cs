@@ -85,13 +85,18 @@ namespace Mekiasm
         public void Update(float dt)
         {
             foreach (KeyValuePair<Point3, bool> item in update_points) {
+                if (update_elements[item.Key] == null) continue;
                 if (item.Value)
-                {
-                    if (update_elements[item.Key] == null) continue;
+                {                    
                     if (update_elements[item.Key].isNeedSimulate) {
                         //如果Simulate返回false则不让继续Simulate
-                        if (!update_elements[item.Key].Simulate()){
-                            update_elements[item.Key].isNeedSimulate=false;
+
+                        if (!update_elements[item.Key].Simulate())
+                        {
+                            update_elements[item.Key].isNeedSimulate = false;
+                        }
+                        else {
+                            Log.Information("Simulate "+item.Key.ToString());
                         }
                     }
                 }
